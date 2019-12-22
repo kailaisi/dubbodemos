@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+application:
+  version: 1.0.0
+dubbo:
+  application:
+    name: dubbo-consumer
+  registry:
+    address: zookeeper://122.51.173.82:2181,122.51.173.82:2182,119.23.36.236:2181
+    file: dubbo-registry/dubbo-registry.properties
+  scan:
+    base-packages: com.kailaisi
